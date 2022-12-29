@@ -1,24 +1,19 @@
-import { invalidate } from '$app/navigation';
 import { productService } from '$src/services/productService';
 import type { Load } from '@sveltejs/kit';
-import { browser } from '$app/environment';
 
-export const load = (async ({
-	url,
-	params,
-	props,
-	fetch,
-	session,
-	stuff,
-	status,
-	error,
-	depends
-}) => {
+export const load: Load = async ({ fetch }) => {
 	console.log('calling load');
 
-	const products = await fetch('/api/products').then((response: any) => response.json());
+	const fetchProducts = async () => {
+		const productRes = await productService.getAll(fetch);
+		return productRes.products;
+	};
 
 	return {
-		products
+		products: fetchProducts()
 	};
-}) satisfies Load;
+};
+
+
+
+

@@ -1,4 +1,4 @@
 export const productService = {
 	getAll: (fetch: any) =>
-		fetch('https://jsonplaceholder.typicode.com/todos').then((response: any) => response.json())
+		fetch('https://dummyjson.com/products').then((response: any) => response.json())
 };
