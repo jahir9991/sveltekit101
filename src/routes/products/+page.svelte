@@ -1,30 +1,26 @@
 <script lang="ts">
+	import { invalidate } from '$app/navigation';
 	import { onMount, onDestroy } from 'svelte';
 	import { productService } from '$src/services/productService';
 	import ProductCard from '$src/components/ProductCard.svelte';
 	import { fade, scale } from 'svelte/transition';
 	import { flip } from 'svelte/animate';
 
-	export let data:any;
-	
+	export let data: any;
 
 	onMount(async () => {
 		console.log('products  onMount called');
 		console.log(data);
-		
+
 	});
 	onDestroy(async () => {
 		console.log('products   onDestroy called');
-		
 	});
-
-	
 
 	const onDeleteProduct = (price: any) => {
 		// products = products.filter((element: any) => element.id != price);
 	};
 </script>
-
 
 <div class="container mx-auto grid grid-cols-8 gap-2">
 	{#if data.products}
