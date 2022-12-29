@@ -17,7 +17,7 @@
 <ul class="inline-flex">
 	<li class="p-4 " class:bg-red-900={$page.url.pathname === '/'}><a href="/">home</a></li>
 	<li class="p-4" class:bg-red-900={$page.url.pathname === '/products'}>
-		<a href="/products">products</a>
+		<a sveltekit: href="/products">products</a>
 	</li>
 </ul>
 
