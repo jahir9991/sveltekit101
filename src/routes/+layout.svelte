@@ -10,9 +10,7 @@
 	
 </script>
 
-<svelte:head>
-	<title>this is title</title>
-</svelte:head>
+
 
 <ul class="inline-flex">
 	<li class="p-4 " class:bg-red-900={$page.url.pathname === '/'}><a href="/">home</a></li>
