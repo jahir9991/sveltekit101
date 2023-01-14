@@ -21,4 +21,4 @@
 
 <slot />
 
-<footer>this is footer</footer>
+<!-- <footer>this is footer</footer> -->

@@ -10,6 +10,7 @@
 	<title>this is home</title>
 </svelte:head>
 
+
 <h1 class="text-red-200">this is home</h1>
 
 <button on:click={changeData}> change </button>

@@ -1,5 +1,10 @@
 <script lang="ts">
+	import  { Product } from "$src/entities/Product.entity";
+
+
 	export let data;
+
+	let p:Product
 </script>
 
 <div>loding...</div>
