@@ -1,5 +1,5 @@
 <script lang="ts">
-	import  { Product } from "$src/entities/Product.entity";
+	import type  { Product } from "$src/entities/Product.entity";
 
 
 	export let data;

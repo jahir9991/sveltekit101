@@ -2,8 +2,9 @@
 	import { onMount } from 'svelte';
 	import gsap from 'gsap';
 	import ScrollTrigger from 'gsap/ScrollTrigger';
-
+export let data;
 	const init = () => {
+		console.log(data);
 		gsap.registerPlugin(ScrollTrigger);
 
 		let scene = gsap.timeline();
