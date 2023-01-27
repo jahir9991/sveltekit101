@@ -3,6 +3,7 @@ const toBool = (value: string): boolean => {
 };
 
 export const ENV = {
+	CORE_API_ENDPOINT: import.meta.env.VITE_CORE_END_POINT,
 	IMAGE_ORIGIN_ENDPOINT: import.meta.env.VITE_IMAGE_ORIGIN_ENDPOINT,
 
 	SESSION_KEYS: 'L00X_',
