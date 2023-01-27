@@ -1083,12 +1083,14 @@
 	</div>
 </div>
 
-<style>
+<style lang="postcss">
 	@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 	* {
 		outline: none;
 		box-sizing: border-box;
+		font-family: 'Poppins';
 	}
+	
 
 	:root {
 		--body-bg-color: #e5ecef;
