@@ -1,0 +1,8 @@
+name = "jobless"
+compatibility_date = "2023-01-28"
+
+[[ d1_databases ]]
+binding = "jobdb" # i.e. available in your Worker on env.DB
+database_name = "jobdb"
+database_id = "b75f74ce-c0ae-4798-ae78-659e1c6747b8"
+preview_database_id = "b75f74ce-c0ae-4798-ae78-659e1c6747b8"
