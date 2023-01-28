@@ -2,7 +2,7 @@ import { RequestHandler } from '@sveltejs/kit';
 import { json } from '@sveltejs/kit';
 
 export const GET = (async ({ request, platform }) => {
-	const { results } = await platform.env.jobdb
+	const { results } = await platform.env["__D1_BETA__jobdb"]
 		.prepare(
 			`
 		select * from comments
