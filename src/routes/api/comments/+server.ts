@@ -2,20 +2,19 @@ import { RequestHandler } from '@sveltejs/kit';
 import { json } from '@sveltejs/kit';
 
 export const GET = (async ({ request, platform }) => {
-
 	const { results } = await platform.env.jobdb
 		.prepare(
 			`
-         select * from comments
+		select * from comments
         `
 		)
 		.all();
 
-        if(results){
-            return new Response(JSON.stringify({ payload: results }));
-        }
+	if (results) {
+		return json({ payload: results });
+	}
 
-	return new Response(JSON.stringify({ payload: "error" }));
+	return new Response(JSON.stringify({ payload: 'error' }));
 }) satisfies RequestHandler;
 
 export const POST = (async ({ request, platform }) => {

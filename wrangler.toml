@@ -1,6 +1,3 @@
-name = "jobless"
-compatibility_date = "2023-01-28"
-
 [[ d1_databases ]]
 binding = "jobdb" # i.e. available in your Worker on env.DB
 database_name = "jobdb"
